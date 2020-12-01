@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食简介</title>
+    <style>
+    *{ 
+    margin: 0; 
+    padding: 0; 
+    }
+    body{
+        width:100%;
+        height:100%;
+        text-align:center;
+        background-color: #272727;
+    }
+    img{
+            width: 300px;
+            height: 280px;
+        }
+        body{
+            width:100%;
+            height:100%;
+            text-align:center;
+            background-color: white;
+            background-size: 1000px;
+        }
+        .box{
+            width: 500px;
+            height: 480px;
+            margin: 0px auto;
+            border: 2px solid white;
+            overflow: hidden; 
+        }
+        .box ul{
+            margin-top: 10px;
+            width: 1145px;
+            height: 129px;
+            animation: move linear 12s infinite;
+        }
+        .box li {
+            width: 229px;
+            height: 129px;
+            float: right;
+            list-style: none;
+        }
+        
+        @keyframes move {
+            0%{
+                transform: translateX(-916px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    #js{
+        width: 150px;
+        height: 200px;
+    }
+
+    .c1{
+    width:300px;
+    height:1000px;
+    background-color:#666666;
+    float:left;
+    color :white;
+    }
+ 
+    .c2{
+    height:950px;
+    background: white;
+    margin-left: 220px;
+    text-align:left;
+    color:black;
+    }
+  
+    .c3{
+    height:50px;
+    background-color:#333333;
+    color:white;
+    }
+  
+  
+    .c4{
+    margin-top:50px;
+    }
+    ul{
+     margin:0; 
+     padding:0;
+     color:white;
+     padding-left: 100px;
+     text-align:left;
+     }
+     #kk{
+         margin: 0;
+         padding: 0;
+         font-size: 30px;
+         text-decoration: none;
+         color: white
+        
+        }
+        #ll{
+          margin-top: 20px;
+         font-size: 30px;
+         text-decoration: none;
+         color:black
+        }
+        
+    hr{
+     height: 2px;
+     background-color: black; 
+     border: 0;
+     }
+    p{
+     font-size:20px;
+     }
+     table, td, th{
+     border:1px solid green;
+     }
+  
+ </style>
+ <script>
+      var ul = document.getElementsByTagName("ul")[0];
+    ul.position = 0;
+      var timer = null;
+    var star = true;
+    timer = setInterval(move,0);
+    function move(){
+        autoplay(ul);
+    }
+    document.onclick = function(){
+        if(star){
+            clearInterval(timer);
+            star = false;
+        }else{
+            timer = setInterval(move,0);
+            star = true;
+        }
+    }
+ </script>
+ </head>
+ <body>
+  
+ <div class="c1">
+    <div class="c4">
+     <img src="22.jpg" id="js">
+    </div>
+    <h1>👩介绍人</h1>
+    
+     <ul>
+     <li>一位逛吃的美食爱好者</li>
+     <li>姓名：沈奥</li>
+     <li>学号：201916180301</li>
+     <li>班级：通信1903</li>
+     <li>下一位：张萌萌</li>
+     201916180302
+     <li>上一位：方传苏</li>
+     201916130201
+     </ul>
+     <br/>
+     <h1>🥢美食简介</h1>
+     鲤鱼在民间有吉祥的象征意义<br>中国饮食在很重要的场合也会有它的一席之地《诗经》载：岂食其鱼，必河之鲤。《济南府志》上早有“黄河之鲤，南阳之蟹，且入食谱”的记载。据这些史料推测，说明早在3000多年以前，黄河鲤鱼就已经成为脍炙人口的名食了。
+  </div>
+ <div class="c3">
+    <a href="https://baike.sogou.com/v93614.htm?fromTitle=%E7%B3%96%E9%86%8B%E9%B2%A4%E9%B1%BC" id="kk">美食推荐🍅糖醋鲤鱼(📍)</a>
+ </div>
+ <div class="c2">
+     <!-- <br><br><br><a href="" id="ll">图册</a> -->
+ <br/>
+  
+  <div class="box">
+<ul>
+    <li><img src="23.jpg" alt=""/></li>
+    <li><img src="24.jpg" alt=""/></li>
+    <li><img src="25.jpg" alt=""/></li>
+    <li><img src="26.jpg" alt=""/></li>
+    <li><img src="27.jpg" alt=""/></li>
+</ul>
+</div>
+
+    <tr>
+        <th>做法介绍:</th>
+        <th>1.鲤鱼去鳞、内脏、两腮，鱼身两侧每2.5厘米直剞后斜剞成翻刀，提起鱼尾使刀口张开，料酒、精盐撒入刀口稍腌<br>
+            &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;2.清汤、酱油、料酒、醋、白糖、精盐、湿淀粉对成芡汁<br>
+            &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;3.在刀口处撒上湿淀粉后,放在七成热的油中炸至外皮变硬，移微火浸炸3分钟，再上旺火炸至金黄色，捞出摆盘，用<br>&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;手将鱼捏松<br>
+            &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;4.将葱、姜、蒜放入锅中炸出香味后倒入对好的芡汁，起泡时用炸鱼的沸油冲入汁内，加以略炒迅速烧到鱼上即可<br></th>
+    </tr>
+    <br>
+    <tr>
+        <th>营养功效:</th>
+        <th>鲤鱼中含有蛋白质、VA、VE、VB等多种维生素，此外还富含钾、钠、磷、钙、碘等矿物元素。功效主要有：能，<br>
+            &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;治疗小儿黄疸对小儿腹泻有很好的疗效；能补充多种维生素和蛋白质，促进消化吸收，增强抵抗力；对胸闷、腹胀<br>
+            &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;等疾病有一定疗效；有利于去除体内的寒气，提高免疫力；能防治动脉硬化、冠心病，还能延年益寿
+
+    </tr>
+
+ </div>
+ </style>
+
+</head>
+<body>
+    
+</body>
+</html>
